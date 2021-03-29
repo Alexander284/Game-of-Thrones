@@ -1,11 +1,9 @@
-import { ThemeConsumer } from "styled-components";
-
 export default class GotService {
     constructor() {
         this._apiBase = 'https://www.anapioficeandfire.com/api';
     }
 
-    getResource = async (url) => {
+    async getResource (url) {
         const res = await fetch(`${this._apiBase}${url}`);
     
         if (!res.ok) {
@@ -31,8 +29,8 @@ export default class GotService {
     }
     
     async getCharacter (id) {
-        const charecter = await this.getResource(`/characters/${id}`);
-        return this._transformCharacter(charecter);
+        const character = await this.getResource(`/characters/${id}`);
+        return this._transformCharacter(character);
     }
     
     async getAllHouses() {
