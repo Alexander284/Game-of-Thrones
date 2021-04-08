@@ -2,7 +2,7 @@ import React from 'react';
 import './errorMessage.css';
 import img from './error.jpg';
 
-const ErrorMassage = () => {
+const ErrorMessage = () => {
     return (
         <>
             <img src={img} alt='error'></img>
@@ -11,4 +11,4 @@ const ErrorMassage = () => {
     )
 }
 
-export default ErrorMassage;
+export default ErrorMessage;
