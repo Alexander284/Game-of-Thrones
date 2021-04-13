@@ -11,7 +11,7 @@ export default class HousesPage extends Component {
     gotService = new gotService();
 
     state = {
-        selectedHouse: 130,
+        selectedHouse: null,
         error: false
     }
 
